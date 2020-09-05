@@ -2,6 +2,10 @@ const path = require('path');
 
 const resolveApp = relativeDir => path.resolve(__dirname, relativeDir);
 
+
+/**
+ * React scripts overrides config
+ */
 module.exports = {
   paths: function(paths, env) {
     paths.appIndexJs = resolveApp('app/index.tsx');
